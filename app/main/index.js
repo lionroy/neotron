@@ -22,7 +22,7 @@ const installExtensions = async () => {
 crashReporter.start({
   productName: 'neotron_space_program',
   companyName: 'N.S.P',
-  submitURL: 'https://example.com/url-to-submit',
+  // submitURL: 'https://example.com/url-to-submit',
   uploadToServer: false,
 });
 
@@ -44,10 +44,12 @@ app.on('ready', async () => {
     height: 800,
     minWidth: 640,
     minHeight: 480,
+    backgroundColor: '#1f1f1f',
     show: false,
   });
 
   mainWindow.loadFile(path.resolve(path.join(__dirname, '../renderer/index.html')));
+  mainWindow.webContents.openDevTools();
 
   // show window once on first load
   mainWindow.webContents.once('did-finish-load', () => {

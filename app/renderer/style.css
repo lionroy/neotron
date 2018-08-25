@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+div {
+    text-align: center;
+    color: #273977;
+    font-size: 5rem;
+    color: #cdcdcd;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    background: #363636;
+    align-self: stretch;
+    -webkit-app-region: drag;
+}
+#content {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background: #1f1f1f;
+    align-items: center;
+}
+
+#leader {
+    flex-grow: 1;
+    color: #cdcdcd;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.option {
+    color: white;
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+.option:hover {
+    background: orangered;
+}

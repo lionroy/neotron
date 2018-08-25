@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <title>electron space program</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+        <div id="content">
+            <header>
+                <div id="close" class="option">&#x2716;</div>
+                <div id="maximize" class="option">&#x1f5d6;</div>
+                <div id="minimize" class="option">&#x1f5d5;</div>
+            </header>
+            <div id="leader">electron 2k18</div>
+            <div>basics</div>
+        </div>
+    </div>
     <script src="./app.js" data-container="#app"></script>
     <script>
       if (process.env.BROWSER_SYNC_CLIENT_URL) {
@@ -15,5 +26,7 @@
         current.parentNode.insertBefore(script, current);
       }
     </script>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
