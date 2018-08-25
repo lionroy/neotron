@@ -20,9 +20,9 @@ const installExtensions = async () => {
 };
 
 crashReporter.start({
-  productName: 'YourName',
-  companyName: 'YourCompany',
-  submitURL: 'https://your-domain.com/url-to-submit',
+  productName: 'neotron_space_program',
+  companyName: 'N.S.P',
+  submitURL: 'https://example.com/url-to-submit',
   uploadToServer: false,
 });
 
